@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="row contact_form">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -118,7 +118,8 @@
                                 </div>
                             </div>
                             <div class="col-md-12 text-right">
-                                <button type="submit" value="submit" class="btn theme_btn button_hover">Send Message</button>
+                                <span class="val"></span>
+                                <input type="button" value="send" class="btn theme_btn button_hover" onclick="whatsapp()"/>
                             </div>
                         </form>
                     </div>
@@ -272,6 +273,6 @@
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/contact.js"></script>
         <script src="js/custom.js"></script>
-        <script src="contact2.js"></script>
+        <script src="js/contact2.js"></script>
     </body>
 </html>

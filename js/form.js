@@ -74,7 +74,7 @@ function validateform() {
     const message = document.querySelector("#message").value;
 
     const url =
-      "https://wa.me/919733814168?text=" +
+      "https://wa.me/919733230418?text=" +
       "Name :" +
       name +
       "%0a" +

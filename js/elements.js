@@ -21,7 +21,7 @@ function whatsapp(){
         
     
         const url =
-          "https://wa.me/919733814168?text=" +
+          "https://wa.me/919733230418?text=" +
           "First Name :" +
           f +
           "%0a" +
