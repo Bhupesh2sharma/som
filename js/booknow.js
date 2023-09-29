@@ -35,7 +35,7 @@ function validation() {
     let type = document.querySelector(".stay").value;
 
     const url =
-      "https://wa.me/919733230418?text=" +
+      "https://wa.me/918918208240?text=" +
       "Arrival :" +
       arr +
       "%0a" +
