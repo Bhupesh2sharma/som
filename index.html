@@ -19,8 +19,37 @@
     <!-- Include Bootstrap Icons via Unpkg CDN -->
     <link href="https://unpkg.com/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
 
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .bcontent {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .th {
+            background-color: #f2f2f2;
+        }
+
+        .icon {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 
 
@@ -86,7 +115,7 @@
                                 <div class="book_tabel_item">
                                     <div class="form-group ">
                                         <div class='input-group date' id='datetimepicker11'>
-                                            <input type='text' class="form-control arr" placeholder="Arrival Date" />
+                                            <input type='text' class="form-control arr" placeholder="Check-In-Date" />
                                             <span class="input-group-addon">
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                             </span>
@@ -94,7 +123,7 @@
                                     </div>
                                     <div class="form-group F">
                                         <div class='input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control dep" placeholder="Departure Date" />
+                                            <input type='text' class="form-control dep" placeholder="Check-Out-Date" />
                                             <span class="input-group-addon">
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                             </span>
@@ -149,62 +178,74 @@
 
 
 <!--================ Accomodation Area  =================-->
-<section class="accomodation_area section_gap">
-    <div class="container">
-        <div class="section_title text-center">
-            <h2 class="title_color">Indulge in Comfort and Luxury</h2>
-            <p>Experience the epitome of comfort and luxury at our hotel accommodation. Each room is thoughtfully
-                designed to provide you with a cozy and relaxing retreat during your stay.
+
+<!--================ Accomodation Area  =================-->
+<div class="container-fluid bcontent">
+    <h2>Indulge in Comfort and Luxury</h2>
+    <p>Experience the epitome of comfort and luxury at our hotel accommodation. Each room is thoughtfully
+        designed to provide you with a cozy and relaxing retreat during your stay.</p>
+    <hr />
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="image/room1.jpg" alt="Suresh Dasari Card" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Deluxe Double Room</h5>
+                <p class="card-text">Featuring free toiletries, this double room includes a private bathroom with a bath, a shower and slippers. A seating area with a flat-screen TV,
+                     a wardrobe and a balcony are available in this double room. The unit has 1 bed.</p>
+            </div>
+            <div class="card-footer">
+                <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
+
+            </div>
         </div>
-        <div class="row mb_30">
-            <div class="col-lg-3 col-sm-6">
-                <div class="accomodation_item text-center">
-                    <div class="hotel_img">
-                        <img src="image/room3.jpg" alt="" height="300px">
-                        <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
-                    </div>
-                    <a href="#">
-                        <h4 class="sec_h4">Suite Room</h4>
-                    </a>
-                </div>
+        <div class="card">
+            <img class="card-img-top" src="image/room2.jpg" alt="Suresh Dasari Card" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Deluxe Double or Twin Room</h5>
+                <p class="card-text">Featuring free toiletries, this twin/double room includes a private bathroom with a bath, a shower and slippers. The twin/double room has tiled floors, a seating area with a flat-screen TV,
+                     a wardrobe, an electric kettle, as well as a dressing room. The unit has 2 beds.</p>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="accomodation_item text-center">
-                    <div class="hotel_img">
-                        <img src="image/gallery/super.jpg" alt="" height="300px">
-                        <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
-                    </div>
-                    <a href="#">
-                        <h4 class="sec_h4">Super Deluxe Room</h4>
-                    </a>
-                </div>
+            <div class="card-footer">
+                <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
+
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="accomodation_item text-center">
-                    <div class="hotel_img">
-                        <img src="image/somras/dulex.jpg" alt="" height="300px">
-                        <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
-                    </div>
-                    <a href="#">
-                        <h4 class="sec_h4">Duluxe Room</h4>
-                    </a>
-                </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="/image/room4.jpg" alt="Suresh Dasari Card" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Executive Suite</h5>
+                <p class="card-text">This suite features 1 living room, 1 separate bedroom and 1 bathroom with a bath and free toiletries. The suite has tiled floors, a seating area with a flat-screen TV, a minibar, a wardrobe, as well as an electric kettle. The unit has 2 beds.</p>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="accomodation_item text-center">
-                    <div class="hotel_img">
-                        <img src="image/somras/dom.jpg" alt="" height="300px">
-                        <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
-                    </div>
-                    <a href="#">
-                        <h4 class="sec_h4">Domaitory</h4>
-                    </a>
-                </div>
+            <div class="card-footer">
+                <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="image/room5.jpg" alt="Suresh Dasari Card" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Deluxe Triple Room</h5>
+                <p class="card-text"> Providing free toiletries, this triple room includes a private bathroom with a bath, a shower and slippers. The triple room features tiled floors, a seating area with a flat-screen TV, a wardrobe, 
+                    an electric kettle, as well as a dressing room. The unit offers 2 beds.</p>
+            </div>
+            <div class="card-footer">
+                <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="/image/room3.jpg" alt="Suresh Dasari Card" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Mixed Dormitory Room</h5>
+                <p class="card-text">Featuring free toiletries, this dormitory room includes a private bathroom with a bath, a shower and slippers. The dormitory room has tiled floors, a seating area with a flat-screen TV, a wardrobe, an electric kettle, as well as a dressing room. The unit has 10 beds.</p>
+            </div>
+            <div class="card-footer">
+                <a href="/booknow.html" class="btn theme_btn button_hover">Book Now</a>
+
             </div>
         </div>
     </div>
-</section>
-<!--================ Accomodation Area  =================-->
+</div>
 
 <!-- trave starts -->
 <div>
@@ -243,43 +284,52 @@
                     into reality. Let us be your compass on the path to extraordinary adventures.</p>
             </div>
             <div class="row mb_30">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="accomodation_item text-center">
-                        <div class="hotel_img">
-                            <img src="image/4 (3).jpg" alt="" height="300px" style="border-radius: 30px;">
-                            <a href="/elements.html" class="btn theme_btn button_hover">Explore</a>
-                        </div>
-                        <a href="#">
-                            <h4 class="sec_h4">South Sikkim</h4>
-                        </a>
-                        <!-- <h5>&#8377 5000.00<small>/Day</small></h5> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="accomodation_item text-center">
-                        <div class="hotel_img">
-                            <img src="image/banner/gang.jpg" alt="" height="300px" style="border-radius: 30px;">
-                            <a href="/elements.html" class="btn theme_btn button_hover">Explore</a>
-                        </div>
-                        <a href="#">
-                            <h4 class="sec_h4">East Sikkim</h4>
-                        </a>
-                        <!-- <h5>&#8377 3000.00<small>/Day</small></h5> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="accomodation_item text-center">
-                        <div class="hotel_img">
-                            <img src="image/4 (2).jpg" alt="" height="300px" style="border-radius: 30px;">
-                            <a href="/elements.html" class="btn theme_btn button_hover">Explore</a>
-                        </div>
-                        <a href="#">
-                            <h4 class="sec_h4">West Sikkim</h4>
-                        </a>
-                        <!-- <h5>&#8377 2000.00<small>/Day</small></h5> -->
-                    </div>
-                </div>
                 
+               
+               
+                
+                <div class="container-fluid">
+                    
+                    <hr />
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image/4 (3).jpg" alt="Suresh Dasari Card">
+                            <div class="card-body">
+                                <h5 class="card-title">South Sikkim</h5>
+                                <p>South Sikkim is a hidden gem nestled in the eastern Himalayas, offering travelers a tranquil escape into nature's embrace. Known for its lush greenery, cascading waterfalls, and serene monasteries, this region is a paradise for nature enthusiasts and spiritual seekers alike.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/elements.html" class="btn theme_btn button_hover">Explore</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image/4 (2).jpg" alt="Suresh Dasari Card">
+                            <div class="card-body">
+                                <h5 class="card-title">West Sikkim</h5>
+                                <p>Nestled in the lap of the Himalayas, West Sikkim offers a perfect blend of natural beauty, rich culture, and serene spirituality. This enchanting region, less explored than its eastern counterpart, is a haven for those seeking an off-the-beaten-path experience.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/elements.html" class="btn theme_btn button_hover">Explore</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image/banner/gang.jpg" alt="Suresh Dasari Card" height="234px">
+                            <div class="card-body">
+                                <h5 class="card-title">East Sikkim</h5>
+                                <p>Nestled in the lap of the mighty Himalayas, East Sikkim is a picturesque and enchanting destination that offers a blend of natural beauty, cultural richness, and adventure opportunities. Located in the northeastern part of India, this region is a must-visit for travelers seeking a unique and serene experience.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/elements.html" class="btn theme_btn button_hover">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </div>
     </section>
@@ -349,6 +399,51 @@
         </div>
     </div>
 </section>
+<div class="section_title text-center bcontent" >
+    <h1 class="title_b"> Additional Facilities We Provide</h1>
+    <div class="container mt-5">
+      
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-header">ROOFTOP RESTAURANT</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            Experience elevated dining at our rooftop restaurant, where delectable cuisine meets breathtaking views. 
+                            Savor exquisite flavors under the open sky while enjoying the perfect ambiance for a memorable dining experience. 
+                            Join us for a culinary journey high above the city.
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-header">WE HOST MARRIGES/BIRTHDAY PARTIES</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            Elevate your special occasions with us! Our rooftop restaurant not only offers spectacular
+                             dining but also serves as the ideal venue for hosting weddings and birthday parties. 
+                            Celebrate life's milestones in style with our stunning backdrop and impeccable service. </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-header">COMPLIMENTARY BREAKFAST</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            Start your day right with us! Enjoy a complimentary breakfast at our rooftop restaurant,
+                             where stunning views meet delicious morning delights. 
+                            Your stay includes the perfect beginning to each day, all in one place.                       </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more categories as needed -->
+        </div>
+    </div>
+    <hr />
+</div>
 <!--================ Facilities Area  =================-->
 
 <!--================ About History Area  =================-->
