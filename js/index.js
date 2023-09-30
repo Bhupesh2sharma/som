@@ -14,10 +14,10 @@ function whatsapp() {
     if (i) {
       const url =
         "https://wa.me/918918208240?text=" +
-        "arrival :" +
+        "Checkin :" +
         arr +
         "%0a" +
-        "depature :" +
+        "checkout :" +
         dep +
         "%0a" +
         "adult :" +
