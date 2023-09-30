@@ -42,7 +42,8 @@ Table of Content:
 /*Color Variables*/
 /*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-.col-md-offset-right-1, .col-lg-offset-right-1 {
+.col-md-offset-right-1,
+.col-lg-offset-right-1 {
   margin-right: 8.33333333%;
 }
 
@@ -53,27 +54,25 @@ Table of Content:
   margin: 0px;
   padding: 0px;
 }
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-  }
-  .map-responsive iframe{
-  left:0;
-  top:0;
-  height:90%;
-  width:100%;
-  position:absolute;
-  }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 100%;
+  position: absolute;
+}
 a {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-
 
 .card {
   border: none;
@@ -95,57 +94,53 @@ a {
 
     &:nth-child(even) .card-body {
       padding-left: 0;
-      padding-right: 1.25rem; 
+      padding-right: 1.25rem;
     }
-    
+
     @media (max-width: 576px) {
       display: block;
     }
-    
   }
 
   .card-img-body {
     flex: 1;
     overflow: hidden;
     position: relative;
-    
+
     @media (max-width: 576px) {
       width: 100%;
       height: 200px;
-          margin-bottom: 20px;
+      margin-bottom: 20px;
     }
-    
   }
-  
+
   .card-img {
     width: 100%;
     height: auto;
     position: absolute;
     margin-left: 50%;
     transform: translateX(-50%);
-    
+
     @media (max-width: 1140px) {
-          margin: 0;
-    transform: none;
-    width: 100%;
-    height: auto;
+      margin: 0;
+      transform: none;
+      width: 100%;
+      height: auto;
     }
-    
   }
 
   .card-body {
     flex: 2;
     padding: 0 0 0 1.25rem;
-    
+
     @media (max-width: 576px) {
       padding: 0;
     }
-    
   }
 }
 
-
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   outline: none;
 }
@@ -178,7 +173,12 @@ section {
   background: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -253,12 +253,12 @@ button:focus {
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
-  background: #CB9732;
+  background: #cb9732;
   padding: 5px 30px;
 }
 
 .theme_btn:before {
-  background: #CB9732;
+  background: #cb9732;
 }
 
 .theme_btn:hover {
@@ -299,7 +299,7 @@ button:focus {
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   z-index: -1;
-  background: #CB9732;
+  background: #cb9732;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -330,7 +330,7 @@ button:focus {
 .book_now_btn {
   width: 100%;
   display: block;
-  background: #CB9732;
+  background: #cb9732;
   color: #222222;
   text-transform: uppercase;
   font-size: 14px;
@@ -362,7 +362,7 @@ button:focus {
 }
 
 .header-top a:hover {
-  color:#CB9732;
+  color: #cb9732;
 }
 
 .header-top ul {
@@ -432,7 +432,8 @@ button:focus {
   display: none;
 }
 
-.navbar .menu_nav .nav-item:hover .nav-link, .navbar .menu_nav .nav-item.active .nav-link {
+.navbar .menu_nav .nav-item:hover .nav-link,
+.navbar .menu_nav .nav-item.active .nav-link {
   color: #52c5fd;
 }
 
@@ -559,7 +560,8 @@ button:focus {
   transform: translateY(50px);
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  transition: transform 300ms ease, background 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, background 300ms ease,
+    -webkit-transform 300ms ease;
 }
 
 .navbar_fixed .navbar {
@@ -584,8 +586,8 @@ button:focus {
 }
 
 .banner_area .bg-parallax {
-  background: url("../image/about_banner.jpg") no-repeat scroll center 0/cover;
-  opacity: 0.50;
+  background: url("../image/about_banner.jpg") no-repeat scroll center 0 / cover;
+  opacity: 0.5;
 }
 
 .banner_area .position {
@@ -692,7 +694,10 @@ button:focus {
   color: #777777;
 }
 
-.book_tabel_item .form-group .input-group .form-control::-webkit-input-placeholder {
+.book_tabel_item
+  .form-group
+  .input-group
+  .form-control::-webkit-input-placeholder {
   color: #777777;
 }
 
@@ -732,7 +737,7 @@ button:focus {
 
 .book_tabel_item .nice-select:after {
   content: "\e874";
-  font-family: 'Linearicons-Free';
+  font-family: "Linearicons-Free";
   font-size: 13px;
   color: #777777;
   border: 0px;
@@ -754,12 +759,12 @@ button:focus {
   background: #04091e;
   z-index: 1;
   overflow: hidden;
-  
 }
 
 .breadcrumb_area .bg-parallax {
-  background: url("../image/about_banner.jpg") no-repeat scroll center 0/cover;
-  opacity: 0.50;
+  background: url("../image/about_banner(1).jpg") no-repeat scroll center 0 /
+    cover;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -788,7 +793,7 @@ button:focus {
 
 .breadcrumb li + li:before {
   content: "\e87a";
-  font-family: 'Linearicons-Free';
+  font-family: "Linearicons-Free";
   font-size: 14px;
   font-weight: 600;
   vertical-align: middle;
@@ -836,7 +841,8 @@ button:focus {
 }
 
 .blog_banner_two .bg-parallax {
-  background: url(../image/banner/banner-2.jpg) no-repeat scroll center top/cover;
+  background: url(../image/banner/banner-2.jpg) no-repeat scroll center
+    top/cover;
 }
 
 /*=============End Blog Banner css =============*/
@@ -915,7 +921,7 @@ button:focus {
 }
 
 .facilities_area .bg-parallax {
-  background: url("../image/facilites_bg.jpg") no-repeat scroll center 0/cover;
+  background: url("../image/facilites_bg.jpg") no-repeat scroll center 0 / cover;
   opacity: 0.15;
 }
 
@@ -925,6 +931,7 @@ button:focus {
   background-color: rgba(249, 249, 255, 0.102);
   padding: 31px 40px 37px;
   color: #fff;
+  height: 35vh;
   margin-bottom: 30px;
 }
 
@@ -1311,11 +1318,17 @@ button:focus {
   color: #fff;
 }
 
-.blog_right_sidebar .search_widget .input-group .form-control::-moz-placeholder {
+.blog_right_sidebar
+  .search_widget
+  .input-group
+  .form-control::-moz-placeholder {
   color: #fff;
 }
 
-.blog_right_sidebar .search_widget .input-group .form-control::-webkit-input-placeholder {
+.blog_right_sidebar
+  .search_widget
+  .input-group
+  .form-control::-webkit-input-placeholder {
   color: #fff;
 }
 
@@ -1482,7 +1495,9 @@ button:focus {
   color: #cccccc;
 }
 
-.blog_right_sidebar .newsletter_widget .form-control::-webkit-input-placeholder {
+.blog_right_sidebar
+  .newsletter_widget
+  .form-control::-webkit-input-placeholder {
   color: #cccccc;
 }
 
@@ -1693,7 +1708,7 @@ button:focus {
 }
 
 .single-post-area .navigation-area .nav-left:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -1730,7 +1745,7 @@ button:focus {
 }
 
 .single-post-area .navigation-area .nav-right:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 991px) {
@@ -1929,7 +1944,7 @@ button:focus {
 
 .comment-form .primary-btn:hover {
   border-color: #f3c300 !important;
-  color: #fff  !important;
+  color: #fff !important;
 }
 
 /*============ End Blog Single Styles  =============*/
@@ -2416,7 +2431,11 @@ button:focus {
   }
 }
 
-b, sup, sub, u, del {
+b,
+sup,
+sub,
+u,
+del {
   color: #f8b600;
 }
 
@@ -2444,11 +2463,21 @@ h6 {
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.5em;
 }
 
-.typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
   color: #777777;
 }
 
@@ -2479,7 +2508,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   line-height: 40px;
   padding: 0 30px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -2749,7 +2778,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial,
+.progress-table .table-head .country,
+.progress-table .table-head .visit,
+.progress-table .table-head .percentage {
   color: #222222;
   line-height: 40px;
   text-transform: uppercase;
@@ -2764,7 +2796,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage {
+.progress-table .table-row .serial,
+.progress-table .table-row .country,
+.progress-table .table-row .visit,
+.progress-table .table-row .percentage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2833,7 +2868,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-gallery-image:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .list-style {
@@ -3224,7 +3259,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-checkbox input:checked + label {
-  background: url(../image/elements/primary-check.png) no-repeat center center/cover;
+  background: url(../image/elements/primary-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3262,7 +3298,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .confirm-checkbox input:checked + label {
-  background: url(../image/elements/success-check.png) no-repeat center center/cover;
+  background: url(../image/elements/success-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3305,7 +3342,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .disabled-checkbox input:checked + label {
-  background: url(../image/elements/disabled-check.png) no-repeat center center/cover;
+  background: url(../image/elements/disabled-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3343,7 +3381,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-radio input:checked + label {
-  background: url(../image/elements/primary-radio.png) no-repeat center center/cover;
+  background: url(../image/elements/primary-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3381,7 +3420,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .confirm-radio input:checked + label {
-  background: url(../image/elements/success-radio.png) no-repeat center center/cover;
+  background: url(../image/elements/success-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3435,7 +3475,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .disabled-radio input:checked + label {
-  background: url(../image/elements/disabled-radio.png) no-repeat center center/cover;
+  background: url(../image/elements/disabled-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -3685,9 +3726,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f3c300;
 }
 /* forms ko css */
-
-
-
 
 /* Forms End */
 /*---------------------------------------------------- */

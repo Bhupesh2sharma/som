@@ -6,8 +6,8 @@ function validation() {
   let child = document.querySelector(".child").value;
   let rooms = document.querySelector(".rooms").value;
   let dri = document.querySelector(".dri").value;
-  let stay = document.querySelector(".stay").value;
-  let type = document.querySelector(".stay").value;
+  // let stay = document.querySelector(".stay").value;
+  let type = document.querySelector(".type").value;
   if (
     arr == "" ||
     dep == "" ||
@@ -15,7 +15,6 @@ function validation() {
     child == "" ||
     rooms == "" ||
     dri == "" ||
-    stay == "" ||
     type == ""
   ) {
     document.querySelector(".val").style = "display: inline; color : red;";
@@ -31,15 +30,15 @@ function validation() {
     let child = document.querySelector(".child").value;
     let rooms = document.querySelector(".rooms").value;
     let dri = document.querySelector(".dri").value;
-    let stay = document.querySelector(".stay").value;
-    let type = document.querySelector(".stay").value;
+    // let stay = document.querySelector(".stay").value;
+    let type = document.querySelector(".type").value;
 
     const url =
       "https://wa.me/918918208240?text=" +
-      "Arrival :" +
+      "Check in :" +
       arr +
       "%0a" +
-      "Departure :" +
+      "Checkout :" +
       dep +
       "%0a" +
       "Room :" +
@@ -49,10 +48,10 @@ function validation() {
       dri +
       "%0a" +
       "Room Type" +
-      type+
-      "%0a" +
-      "Stay: " +
-      stay;
+      type;
+      // "%0a" +
+      // "Stay: " +
+      // stay;
     window.open(url, "_blank").focus();
   }
 }
